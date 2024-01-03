@@ -17,4 +17,24 @@ plt.ylabel('y - axis')
 plt.title('My first graph!') 
   
 # function to show the plot 
-plt.sav
+plt.savefig("My first graph.jpg")
+
+
+# x axis values 
+x = [11,12,13] 
+# corresponding y axis values 
+y = [12,44,41] 
+  
+# plotting the points  
+plt.plot(x, y) 
+  
+# naming the x axis 
+plt.xlabel('x - axis') 
+# naming the y axis 
+plt.ylabel('y - axis') 
+  
+# giving a title to my graph 
+plt.title('My Second graph!') 
+  
+# function to show the plot 
+plt.savefig("My Second graph.jpg")
