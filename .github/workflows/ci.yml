@@ -8,19 +8,19 @@ jobs:
     My_first_job:
         runs-on: ubuntu-latest
 
-    steps :
+    steps:
         - name: checkout repo
-        uses : actions/checkout@v4
+        uses: actions/checkout@v4
 
-        -name : Setup python
-        uses : actions/setup-python@v5 
+        - name: Setup python
+        uses: actions/setup-python@v5 
         with:
             python-version: 3.11 
 
-        -name : update pip in github machine 
+        - name : update pip in github machine 
         run: python -m pip install --upgrade pip
 
-        -name : requiremnt.py file run
+        - name : requiremnt.py file run
         run: python -r requiremnt.py
 
         -name : main.py file  run
