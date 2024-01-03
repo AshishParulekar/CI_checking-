@@ -35,8 +35,8 @@ jobs:
 
             echo "# Test_CML Report " >> report.md
             echo "# My first graph " >> report.md
-            echo '![](./My first graph "Confusion Matrix")' >> report.md
-            echo '![](./My Second graph "Confusion Matrix")' >> report.md
+            echo '![](./My first graph.jpg "Confusion Matrix")' >> report.md
+            echo '![](./My Second graph.jpg "Confusion Matrix")' >> report.md
 
             cml comment create report.md
 
