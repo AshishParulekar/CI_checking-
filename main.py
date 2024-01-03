@@ -1,4 +1,4 @@
-from matplotlib.pyplot import plt 
+import  matplotlib.pyplot as plt 
 
 # x axis values 
 x = [1,2,3] 
