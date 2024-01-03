@@ -26,12 +26,12 @@ jobs:
           run: python main.py
 
         - name : CML installation   
-          uses: iterative/setup-cml@v1
+          uses: iterative/setup-cml@v2
 
         - name: Create CML report
           env:
             REPO_TOKEN: ${{ secrets.CI_SECRET_TOKEN }}
-          run: |
+          run: 
 
             echo "# Test_CML Report " >> report.md
             echo "## My first graph " >> report.md
