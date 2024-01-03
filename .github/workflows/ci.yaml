@@ -31,16 +31,13 @@ jobs:
         - name: Create CML report
           env:
             REPO_TOKEN: ${{ secrets.CI_SECRET_TOKEN }}
-          run: 
+          run: |
 
-            echo "# Test_CML Report " >> report.md
-            echo " /n ">> report.md
-            echo "My first graph " >> report.md
-            echo '![](./one.jpg "Confusion Matrix")' >> report.md
-            echo " /n ">> report.md
-            echo "My second graph " >> report.md
-            echo '![](./two.jpg "Confusion Matrix")' >> report.md
-            
+            echo "# First Line of our report" >> report.md
+            echo "## Bar Plots" >> report.md
+            echo '![](./one.jpg "line plot")' >> report.md
+            echo "## Line Plots" >> report.md
+            echo '![](./two.jpg "line plot")' >> report.md
             cml comment create report.md
 
 
