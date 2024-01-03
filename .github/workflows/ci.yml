@@ -1,10 +1,9 @@
 name : my_first_pipline
 
 on:
-    push:
+    push
 
 jobs:
-
     My_first_job:
         runs-on: ubuntu-latest
 
