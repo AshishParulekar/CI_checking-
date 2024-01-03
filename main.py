@@ -17,7 +17,7 @@ plt.ylabel('y - axis')
 plt.title('My first graph!') 
   
 # function to show the plot 
-plt.savefig("My first graph.jpg")
+plt.savefig(".\.github\workflows\My first graph.jpg")
 
 
 # x axis values 
@@ -37,4 +37,4 @@ plt.ylabel('y - axis')
 plt.title('My Second graph!') 
   
 # function to show the plot 
-plt.savefig("My Second graph.jpg")
+plt.savefig(".\.github\workflows\My Second graph.jpg")

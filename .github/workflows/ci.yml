@@ -23,7 +23,23 @@ jobs:
           run: pip install -r requirements.txt
 
         - name : main.py file  run
-          run: python main.py
+          run: python main.py b 
+
+        - name : CML installation   
+          uses: iterative/setup-cml@v1
+
+        name : CML configuration
+
+            echo "# Test_CML Report " >> report.md
+            echo "# My first graph " >> report.md
+            echo '![](./My first graph "Confusion Matrix")' >> report.md
+            echo '![](./My Second graph "Confusion Matrix")' >> report.md
+            
+            cml comment create report.md
+
+
+
+        
 
 
 
