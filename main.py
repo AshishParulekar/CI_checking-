@@ -17,7 +17,7 @@ plt.ylabel('y - axis')
 plt.title('My first graph!') 
   
 # function to show the plot 
-plt.savefig(".\one.jpg")
+plt.savefig("one.jpg")
 
 
 # x axis values 
@@ -37,4 +37,4 @@ plt.ylabel('y - axis')
 plt.title('My Second graph!') 
   
 # function to show the plot 
-plt.savefig(".\two.jpg")
+plt.savefig("two.jpg")
